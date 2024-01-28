@@ -1,8 +1,8 @@
 /* LESSON 3 - Programming Tasks */
 
 /* FUNCTIONS */
-/* Function Definition - Add Numbers */
 
+/* Function Definition - Add Numbers */
 function add(number1, number2) {
     return number1 + number2;
 }
@@ -21,7 +21,7 @@ function subtract(number1, number2) {
   return number1 - number2;
 }
 
-//button Subtract Numbers
+//button subtract Numbers
 function subtractNumbers() {
     let subtractNumber1 = Number(document.querySelector('#subtract1').value);
     let subtractNumber2 = Number(document.querySelector('#subtract2').value);
@@ -34,7 +34,7 @@ document.querySelector('#subtractNumbers').addEventListener('click', subtractNum
 const multiply = (number1, number2) => {
     return number1 * number2;
 };
-
+//button multiply Numbers
 function multiplyNumbers() {
     let multiplyNumber1 = Number(document.querySelector('#factor1').value);
     let multiplyNumber2 = Number(document.querySelector('#factor2').value);
@@ -47,7 +47,7 @@ document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNum
 function divide(number1, number2) {
     return number1 / number2;
 }
-
+//button divide Numbers
 function divideNumbers() {
     let divideNumber1 = Number(document.querySelector('#dividend').value);
     let divideNumber2 = Number(document.querySelector('#divisor').value);
