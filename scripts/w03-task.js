@@ -2,64 +2,123 @@
 
 /* FUNCTIONS */
 /* Function Definition - Add Numbers */
+
 function add(number1, number2) {
     return number1 + number2;
 }
 
-/* Function Expression - Subtract Numbers */
-const subtract = function(number1, number2) {
-    return number1 - number2;
-};
-
-/* Arrow Function - Multiply Numbers */
-const multiply = (number1, number2) => number1 * number2;
-
-/* Open Function Use - Divide Numbers */
-function divide(dividend, divisor) {
-    return dividend / divisor;
+//button Add Numbers
+function addNumbers(){
+    let addNumber1 = Number(document.querySelector('#add1').value);
+    let addNumber2 = Number(document.querySelector('#add2').value);
+    document.querySelector('#sum').value = add(addNumber1, addNumber2);
 }
 
-/* Using function expressions, define another function named divideNumbers that gets the values of two HTML form controls with IDs of dividend and divisor. */
-const divideNumbers = function() {
-    const dividend = parseInt(document.getElementById("dividend").value);
-    const divisor = parseInt(document.getElementById("divisor").value);
-    const quotient = divide(dividend, divisor);
-    document.getElementById("quotient").value = quotient;
+document.querySelector('#addNumbers').addEventListener('click', addNumbers);
+
+/* Function Expression - Subtract Numbers */
+function subtract(number1, number2) {
+  return number1 - number2;
+}
+
+//button Subtract Numbers
+function subtractNumbers() {
+    let subtractNumber1 = Number(document.querySelector('#subtract1').value);
+    let subtractNumber2 = Number(document.querySelector('#subtract2').value);
+    document.querySelector('#difference').value = subtract(subtractNumber1, subtractNumber2);
+}
+document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
+
+
+/* Arrow Function - Multiply Numbers */
+const multiply = (number1, number2) => {
+    return number1 * number2;
 };
 
-/* Add a "click" event listener to the HTML button with an ID of divideNumbers that calls the divideNumbers function. This line of code is NOT located inside a function because it needs to be executed immediately when the page loads. */
-document.getElementById("divideNumbers").addEventListener("click", divideNumbers);
+function multiplyNumbers() {
+    let multiplyNumber1 = Number(document.querySelector('#factor1').value);
+    let multiplyNumber2 = Number(document.querySelector('#factor2').value);
+    document.querySelector('#product').value = multiply(multiplyNumber1, multiplyNumber2);
+}
 
-/* Add an event listener for the Get Total Due button when clicked that invokes the following functionality: */
-document.getElementById("getTotalDue").addEventListener("click", () => {
-    /* Declare and instantiate a variable that stores the numeric value entered by the user in the subtotal field. */
-    const subtotal = parseFloat(document.getElementById("subtotal").value);
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
-    /* Check IF the membership checkbox has been checked by the user to apply a 20% discount to the subtotal amount. */
-    const membershipCheckbox = document.getElementById("membership");
-    const discount = membershipCheckbox.checked ? subtotal * 0.2 : 0;
+/* Open Function Use - Divide Numbers */
+function divide(number1, number2) {
+    return number1 / number2;
+}
 
-    /* Output the total to the total span in the format shown with two decimals using a template string. */
-    const total = (subtotal - discount).toFixed(2);
-    document.getElementById("total").textContent = `$${total}`;
+function divideNumbers() {
+    let divideNumber1 = Number(document.querySelector('#dividend').value);
+    let divideNumber2 = Number(document.querySelector('#divisor').value);
+    document.querySelector('#quotient').value = divide(divideNumber1, divideNumber2);
+}
+
+document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
+
+/* Decision Structure */
+
+// Event listener for the Get Total Due button
+document.querySelector('#getTotal').addEventListener('click', function() {
+    // Get the subtotal entered by the user
+    let subtotal = Number(document.querySelector('#subtotal').value);
+
+    // Check if the membership checkbox is checked
+    let isMember = document.querySelector('#member').checked;
+
+    // Apply a 20% discount if the user is a member
+    if (isMember) {
+        subtotal *= 0.8;
+    }
+
+    // Output the total to the total span with two decimals
+    document.querySelector('#total').textContent = `Total: $${subtotal.toFixed(2)}`;
 });
 
 /* ARRAY METHODS - Functional Programming */
+
+
+let numberArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+
 /* Output Source Array */
+document.querySelector("#array").innerHTML = numberArray;
 
 /* Output Odds Only Array */
+document.querySelector('#odds').innerHTML = numberArray.filter(number => number % 2 === 1);
 
 /* Output Evens Only Array */
-
+document.querySelector('#evens').innerHTML = numberArray.filter(number => number % 2 === 0);
 /* Output Sum of Org. Array */
+document.querySelector('#sumOfArray').innerHTML = numberArray.reduce((sum, number) => sum + number);
 
-/* Using arrow functions, define another function named multiplyNumbers that gets the values of two HTML form controls with IDs of factor1 and factor2. */
-const multiplyNumbers = () => {
-    const number1 = parseInt(document.getElementById("factor1").value);
-    const number2 = parseInt(document.getElementById("factor2").value);
-    const product = multiply(number1, number2);
-    document.getElementById("product").value = product;
-};
 
-/* Add a "click" event listener to the HTML button with an ID of multiplyNumbers that calls the multiplyNumbers function. This line of code is NOT located inside a function because it needs to be executed immediately when the page loads. */
-document.getElementById("multiplyNumbers").addEventListener("click", multiplyNumbers);
+/* Output Multiplied by 2 Array */
+document.querySelector('#multiplied').innerHTML = numberArray.map(number => number * 2);
+/* Output Sum of Multiplied by 2 Array */
+document.querySelector('#sumOfMultiplied').innerHTML = numberArray.map(number => number * 2).reduce((sum, number) => sum + number);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
