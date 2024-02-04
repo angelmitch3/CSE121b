@@ -31,6 +31,10 @@ let myProfile = {
         length: "28 years",
       },
       {
+        place: "Manila City",
+        length: "3 years",
+      },
+      {
         place: "Quezon City",
         length: "10 years",
       }
