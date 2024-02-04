@@ -4,7 +4,7 @@ let myProfile = {
     name: "Michael Galang",
   
     /* Photo with attributes */
-    photo: "images/placeholder.png",
+    photo: "images/placeholder.PNG",
   
     /* Favorite Foods List*/
     favoriteFoods: [
