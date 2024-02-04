@@ -27,15 +27,15 @@ let myProfile = {
     /* Places Lived DataList */
     placesLived: [
       {
-        place: "Makati City",
+        place: "Makati City, Philippines",
         length: "28 years",
       },
       {
-        place: "Manila City",
+        place: "Manila City, Philippines",
         length: "3 years",
       },
       {
-        place: "Quezon City",
+        place: "Quezon City, Philippines",
         length: "10 years",
       }
     ],
