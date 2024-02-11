@@ -1,3 +1,4 @@
+//Added additional options such as sorting the temples alphabetically.
 /* W05: Programming Tasks */
 
 /* Declare and initialize global variables */
@@ -72,6 +73,10 @@ const filterTemples = (temples) => {
         case 'all':
             // No filter. Just use temples as the argument
             displayTemples(temples);
+            break;
+        case 'alphabetical':
+            // Sort temples alphabetically by their names
+            displayTemples([...temples].sort((a, b) => a.templeName.localeCompare(b.templeName)));
             break;
     }
 }
