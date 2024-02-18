@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto:wght@300&display=swap');
+
+body {
+    font-size: 22px;
+    font-family: Roboto, Helvetica, sans-serif;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto; /* Add this line */
+    padding: 0 10%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+    
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto";
+  color: #004643;
+  text-decoration: none;
+}
+
+.book {
+    text-align: center;
+    color: #004643;
+    background-color: rgb(208, 208, 208);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-family: Roboto, Helvetica, sans-serif;
+    
+}
+
+.book:hover {
+    background-color: #004643;
+    color:#BDFAF1;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+
+.button-box { 
+    text-align: center;
+    max-width: 100%; /* Change this from 1500px to 100% */
+    margin: 0 auto; /* Add this line */
+    padding: 0 10%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+}
+
+.testimony {
+   margin-top: 222px;
+   text-align: center;
+  
+}
+
+footer {
+    background-color: #004643;
+    color: #BDFAF1;
+    max-width: 100%;
+    padding: 25px 50px;
+    margin-top: 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+footer a {
+    text-align: center;
+    color:#BDFAF1;
+    background-color: #004643;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, sans-serif;
+    width: 100%;
+}
+
+footer a:hover  {
+    color: #BDFAF1;
+}
+
+footer p {
+    font-size: 1.2em;  
+    font-family: Roboto, Helvetica, sans-serif;
+}    
+
+footer p a:hover {
+    text-decoration: underline;
+} 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:#004643;
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #BDFAF1;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color:#BDFAF1;
+    color:#004643;
+    text-decoration:none;
+ } 
+ #background {
+    background-color:#63CCCA;
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 100%;
+    display: block;
+    z-index: 0;
+}
+
+
+.logo {
+ width: 80px;
+ left: 30px;
+}
+
+#logo_link {
+   text-align: left;
+   padding-top: 5px;
+   padding-left: 20px;
+
+   justify-self: center;
+   align-self: center;
+}
+
+main {
+    text-align:center ;
+    text-decoration: none;
+    max-width: 100%; /* Add this line */
+    margin: 0 auto; /* Add this line */
+    padding: 0 10%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+    background-color:#BDFAF1;
+    
+
+}
+
+.social img {
+    padding-top: 15px;
+    
+}
+
+h4 {  
+    color: #004643;
+} 
+
+#background {
+    background-color:#63CCCA;
+    height: 600px;
+    margin-top: 700px;
+ 
+}
+
+/* CSS code for Forms */
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color:#63CCCA 
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    color:#004643
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide:first-child {
+    opacity: 1;
+}
+
+#content {
+
+   background: linear-gradient(#004643, #63CCCA, #BDFAF1);
+   max-width: 100%;
+   z-index: -1;
+   align-items: center;
+   text-decoration: none;
+    height: 1200px;
+    max-width: 100%;
+    text-align:center;
+    margin-bottom: 0;
+    margin-top: 0;
+    flex: 1 0 auto;
+   
+
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0; 
+    align-items: center; /* This will center the items vertically */
+    justify-items: center; /* This will center the items horizontally */
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+#hero-box {
+    align-self: center;
+    align-content: center;
+    margin: 100px auto; /* This will center the box horizontally */
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: 1;
+}
+
+#hero-video {
+    width: 1550px;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+  
+#hero-msg h1 {   
+    text-align:center ;
+    color:#BDFAF1;
+    font-size: 60px;
+ } 
+ 
+ #hero-msg h4 {   
+    text-align:center ;
+    color: white;
+
+ }
+.home-grid {
+    font-family: Roboto, Helvetica, sans-serif;
+    max-width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    height: 360px;
+   
+}  
+
+.home-grid a h2 {
+ text-decoration: none;
+}   
+
+.justify-paragraph {
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    background-color:#BDFAF1;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.mymg3, .senrin {
+    margin-top: 0;
+    position: relative;
+    text-align: justify;
+    background-color:#004643;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.itilv3-card, .itilv4-card, .mcts-card {
+    width: 400px; /* Reduced width */
+    height: 640px;    
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Helvetica, sans-serif;
+    border-radius: 0; /* Remove edges */
+    padding: 10px 10px;
+
+}
+
+.itilv3-card {
+    text-align: center;
+    text-decoration: none;
+}
+
+.itilv4-card {
+    text-align: center;
+    text-decoration: none;
+}
+
+.mcts-card {
+    text-align: center;
+    text-decoration: none;
+}
+.home-grid h2 {
+    border-bottom: none;
+}
+
+
+main section img {
+    box-sizing: border-box;
+    border-radius: 0; /* Remove edges */
+    max-width: 100%;
+    text-decoration: none;
+    
+}
+
+.certification-img {
+        margin-top: 200px;
+        margin-bottom: 0;
+        border: 5px solid #004643;
+        transition: transform .5s;
+        box-shadow: 5px 5px 10px #6f7364; 
+        text-decoration: none;
+    }
+
+    
+
+#Certification-header {
+        background-color:#004643; 
+        max-width: 100%;
+        text-align:center;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+}
+
+
+.Certification H1 {
+    text-decoration-color: #BDFAF1;
+    color: #BDFAF1;
+    z-index: 1;
+    text-decoration: none;
+  
+
+ }
+
+ .certification-img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    text-decoration: none;
+ }
+
+
+ .contactme {
+    position: relative;
+    text-align: center;
+    color: #004643;
+    background-color: rgb(208, 208, 208);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 100px;
+    border-radius: 10px;
+    font-family: Roboto, Helvetica, sans-serif;
+    margin-top: 5px;
+    
+ }    
+
+.contactme:hover {
+    background-color: #004643;
+    color:#BDFAF1;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+
+.button-box { 
+    margin-top: 70px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 25px;   
+}
+
+#content-portfolio {
+
+     background: linear-gradient(#004643, #63CCCA, #BDFAF1);
+     max-width: 100%;
+     z-index: 1;
+     align-items: center;
+     text-decoration: none;
+     height: 800px;
+     max-width: 100%;
+     text-align:center;
+     margin-bottom: 0;
+     margin-top: 0;
+  }   
+
+
+.content_myportfolio1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 0;
+    background: radial-gradient(#004643, #63CCCA);
+    height: max-content;
+    padding: 20px;
+}
+.content_myportfolio1 p {
+    color: #BDFAF1;
+    
+}
+.content_myportfolio1:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.content_myportfolio1 .info {
+    width: calc(100% - 990px);
+    padding: 10px;
+    height: auto;
+    background-color: #004643;
+}
+.content_myportfolio1 iframe {
+    width: 900px;
+    height: 600px;
+    padding: 30px;
+    
+}
+
+.content_myportfolio2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background: radial-gradient(#004643, #63CCCA);
+    height: max-content;
+    padding: 20px;
+}
+
+.content_myportfolio2 p {
+    color: #BDFAF1;
+}
+.content_myportfolio2:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.content_myportfolio2 .info {
+    width: calc(100% - 990px);
+    padding: 10px;
+    height: auto;
+    background-color: #004643;
+
+}
+
+.content_myportfolio2 h2, .content_myportfolio1 h2 {
+      
+    color: #BDFAF1;
+
+}
+.content_myportfolio2 iframe {
+    width: 900px;
+    height: 600px;
+    padding: 30px;
+    
+}
+
+#MyPortfolio-header {
+    background-color:#63CCCA; 
+    max-width: 100%;
+    text-align:center;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 100px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    color:#BDFAF1;
+    z-index: -1;
+    
+}
+
+.myportfolio-video {
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    z-index: 1;  
+    width:max-content;
+ 
+}
+
+.contactme1 {
+    position: relative;
+    text-align: center;
+    color: #004643;
+    background-color: rgb(208, 208, 208);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 100px;
+    border-radius: 10px;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.contactme1:hover {
+    background-color: #004643;
+    color:#BDFAF1;
+    box-shadow: 5px 5px 5px whitesmoke
+}
+
+.button-box1 { 
+    margin-top: 5px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 25px;
+     
+}
+
+.button-box {
+     margin-top: 5px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.button-learn {
+    padding: 10px 20px;
+    background-color: #BDFAF1;
+    color: #004643;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button-learnmore2 {
+    padding: 10px 20px;
+    background-color: #BDFAF1;
+    color: #004643;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button-learn:hover,.button-learnmore2:hover {
+    background-color:#63CCCA;
+    color: #004643; 
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+
+.download-button {
+    padding: 10px 20px;
+    background-color: #BDFAF1;
+    color: #004643;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.download-button:hover {
+    background-color:  #004643;
+    color: #BDFAF1; 
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.back-button a {
+    
+    text-decoration: none;
+    box-shadow: 5px 5px 5px whitesmoke
+}
+
+.back-button:hover {
+ color: #004643;
+
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 600px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+  #content-resume {
+
+    background: linear-gradient(#004643, #63CCCA, #BDFAF1);
+    max-width: 100%;
+    z-index: 1;
+    align-items: center;
+    text-decoration: none;
+    height: 1600px;
+    max-width: 100%;
+    text-align:center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #BDFAF1; 
+  }   
+
+  #content-resume h2 {
+
+    max-width: 100%;
+    z-index: 1;
+    align-items: center;
+    text-decoration: none;
+    max-width: 100%;
+    text-align:center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #BDFAF1;
+  }   
+
+  .button-box2 { 
+    text-align: center;
+    max-width: 100%; /* Change this from 1500px to 100% */
+    margin: 0 auto; /* Add this line */
+    padding: 0 10%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+
+  }
+
+  #contactus {
+    border: 1px solid #63CCCA;
+    box-shadow: 5px 5px 5px gray;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(#004643, #63CCCA, #BDFAF1);
+    font-size:medium;
+    border-radius: 5%;
+  }
+  .logo {
+    width: 80px;
+    left: 80px;
+   }
+
+   #contactus a {
+    margin: 0;
+   }
+  
+   .img {
+    width: 40px;
+    left: 40px; 
+    margin: 0;  
+  }
