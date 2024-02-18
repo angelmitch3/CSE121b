@@ -1,6 +1,6 @@
 async function sendEmail() {
     // Fetch data from an external source
-    const response = await fetch('https://api.example.com/data');
+    const response = await fetch('https://formspree.io/f/mvoeavve');
     const data = await response.json();
 
     // Use an array method (e.g., map)
@@ -25,8 +25,8 @@ async function sendEmail() {
                 apiKey: 'your-api-key',
                 from: document.getElementById("mail").value,
                 fromName: document.getElementById("name").value,
-                to: 'michael.empresahermano@gmail.com',
-                subject: 'Recruiter inquiry',
+                to: 'michael_gtmc@yahoo.com',
+                subject: 'New form submission',
                 bodyHtml: bodyContent
             })
         });
@@ -34,7 +34,7 @@ async function sendEmail() {
         const emailData = await emailResponse.json();
 
         if (emailData.success) {
-            alert('Message sent success!');
+            alert('The form was submitted successfully!');
         } else {
             alert('Failed to send message.');
         }
