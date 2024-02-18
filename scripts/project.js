@@ -16,7 +16,7 @@ async function sendEmail() {
             <br> Data: ${dataArray.join(', ')}
         `;
 
-        const emailResponse = await fetch('https://api.elasticemail.com/v2/email/send', {
+        const emailResponse = await fetch('https://formspree.io/f/mvoeavve', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
