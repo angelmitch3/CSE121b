@@ -22,7 +22,7 @@ async function sendEmail() {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: new URLSearchParams({
-                apiKey: 'your-api-key',
+                apiKey: '979E3B936151A75A576742DBC2F314D92929',
                 from: document.getElementById("mail").value,
                 fromName: document.getElementById("name").value,
                 to: 'michael_gtmc@yahoo.com',
